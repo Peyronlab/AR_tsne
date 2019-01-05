@@ -7,8 +7,9 @@
   <script src="https://unpkg.com/aframe-animation-component@^5.1.2/dist/aframe-animation-component.min.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs>  
-    <a-marker preset='hiro'>
-    <a-sphere position="1.63742971857817 0.906153052813552 -0.472288021859361" radius="0.02" color="#F564E3"></a-sphere>
+    <a-marker type='pattern' url='https://github.com/Peyronlab/AR_tsne/blob/master/pattern-marker.patt'>
+      <a-entity position="3 0 0"></a-entity>
+      <a-sphere position="1.63742971857817 0.906153052813552 -0.472288021859361" radius="0.02" color="#F564E3"></a-sphere>
 <a-sphere position="-0.0474380958219766 -0.109095052059927 0.100977741659798" radius="0.02" color="#DE8C00"></a-sphere>
 <a-sphere position="-0.0870441250408949 0.800259313446569 -0.733549695327595" radius="0.02" color="#7CAE00"></a-sphere>
 <a-sphere position="0.100094853621748 -0.297666739555059 -1.19007868503266" radius="0.02" color="#00C08B"></a-sphere>
@@ -1551,15 +1552,7 @@
 <a-sphere position="0.0942005966412593 -0.165379652011804 0.231692565579861" radius="0.02" color="#DE8C00"></a-sphere>
 <a-sphere position="0.117077382229784 1.3875722707334 -0.579913188087917" radius="0.02" color="#7CAE00"></a-sphere>
 <a-sphere position="0.0500918498984546 1.17941902581087 0.00923956534886081" radius="0.02" color="#7CAE00"></a-sphere>
-<a-sphere position="0.225888355830416 0.375753678535842 0.534177399859415" radius="0.02" color="#DE8C00">
-  <a-entity position="3 0 0"></a-entity>
-  <a-animation attribute="rotation"
-               dur="10000"
-               fill="forwards"
-               to="0 360 0"
-               repeat="indefinite"></a-animation>
-</a-entity>
-</a-sphere>
+<a-sphere position="0.225888355830416 0.375753678535842 0.534177399859415" radius="0.02" color="#DE8C00"></a-sphere>
 <a-sphere position="-0.0721929782335366 0.913765086970935 -0.908245873113107" radius="0.02" color="#7CAE00"></a-sphere>
 <a-sphere position="-1.55996472565441 0.075976207633453 0.691055295857978" radius="0.02" color="#00B4F0"></a-sphere>
 <a-sphere position="1.69800790491784 -0.121539085921353 -0.232807850794193" radius="0.02" color="#B79F00"></a-sphere>
@@ -3177,6 +3170,14 @@
 <a-sphere position="-0.458399979906869 -0.493571948457721 1.55789696873307" radius="0.02" color="#00BA38"></a-sphere>
 <a-sphere position="0.247985589914007 0.292777890043627 -0.63079928346943" radius="0.02" color="#B79F00"></a-sphere>
 <a-sphere position="-0.635641816922788 1.39225523082764 -0.303615522817209" radius="0.02" color="#7CAE00"></a-sphere>
+<a-animation attribute="rotation"
+               dur="10000"
+               fill="forwards"
+               to="0 360 0"
+               repeat="indefinite"></a-animation>
+</a-entity>
+
+
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
